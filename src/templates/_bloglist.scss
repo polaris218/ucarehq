@@ -1,0 +1,40 @@
+.blog-header {
+  position: relative;
+  height: 400px;
+  color: #fff;
+  margin-bottom: 100px;
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 770px) {
+      width: 90%;
+      h1 {
+        font-size: 200%;
+      }
+    }
+    h1, h6 {
+      font-feature-settings: "liga" 0;
+      font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+}
+.blog-list-main {
+  .arrow {
+    padding-top:2%;
+    padding-bottom: 5%;
+    .arrow-btn {
+      padding: 8px 20px 10px;
+      border-radius: 0;
+      background: #e10332;
+      .arrow-icon {
+        color: #fff;
+        font-size: 70%;
+      }
+    }
+    .arrow-btn:hover {
+      background: #af0227;
+    }
+  }
+}  

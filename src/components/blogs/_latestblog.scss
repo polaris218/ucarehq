@@ -1,0 +1,103 @@
+$bloglist-border: 1px solid rgba(50,58,70,.12);
+$blog-radius: 5px;
+
+@mixin fonts {
+  font-feature-settings: "liga" 0;
+  font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.latestblog {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-color: rgba(50,58,70,.05);
+  span, h3, h6 {
+    @include fonts();
+  }
+  h2{
+    @include fonts();
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: $grey_color;
+    opacity: 0.9;
+    font-size: 180%;
+    @media screen and (min-width: 768px) {
+      font-size: 240%;
+    }
+  }
+  .latest-blog-wrapper {
+    justify-content: center;
+    .blog-out {
+      display: inline-block;
+    }
+    .blogs {
+      border: $bloglist-border;
+      background: #fff;
+      border-radius: $blog-radius;
+      .latest-blog {
+        text-decoration: none;
+        h3 {
+          color: #323a46;
+          width: 100%;
+          font-size: 160%;
+        }
+        .thumb {
+          position: relative;
+          overflow: hidden;
+          .cat {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            border-radius: 20px;
+            border: 2px solid hsla(0,0%,100%,.8);
+            background: rgba(50,58,70,.25);
+            padding: 5px 15px;
+            font-size: 90%;
+            text-transform: uppercase;
+          }
+        }
+        &:hover {
+          .thumb {
+            img {
+              transform: scale(1.05);
+              cursor: pointer;
+            }
+          }
+        }
+        img {
+          transition: all .4s ease;
+        }
+      }
+      .readmore-link {
+        padding-bottom: 10%;
+        .read-more {
+          text-decoration: none;
+          color: hsla(0,0%,100%,.85);
+          background: #475364;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 10px 25px;
+          letter-spacing: 1px;
+          border-radius: 30px;
+        }
+      }
+      .content {
+        padding: 50px 50px 20px;
+        .blog-excerpt {
+          padding-bottom: 10%;
+          text-align: left;
+          font-size: 90%;
+          color: rgba(50,58,70,.5);
+          margin: auto;
+          .feature-date {
+            color: rgba(50,58,70,.5);
+            border-radius: 20px;
+            background: rgba(50,58,70,.05);
+            padding: 5px 15px;
+            font-size: 80%;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

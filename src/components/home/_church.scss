@@ -1,0 +1,28 @@
+$church-manage-background-height: 100vh;
+.church-manage {
+  height: $church-manage-background-height;
+  position: relative;
+  .church-manage-title {
+    @media screen and (max-width: 700px){
+      
+    }
+    h1 {
+      font-feature-settings: "liga" 0;
+      font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding-top: 45vh;
+      font-size: 320%;
+      @media screen and (max-width: 770px){
+        font-size: 240%;
+      }
+      em {
+        font-style: normal;
+        font-size: 100%;
+        font-weight: 300;
+      }
+      strong {
+        display: inline-block;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+a[href]:link{color:#e10332}
+a[href]:focus,a[href]:hover{color:#960221}
+form input[type=submit].big-button{border-radius:30px;background:#72be1a;border-color:#72be1a;color:#fff}
+form input[type=submit].big-button:hover,form input[type=submit].big-button:focus{background:#8ce229;border-color:#8ce229;color:#3c640e}
+input[type=email],input[type=tel],input[type=text],select,textarea{border-radius:1em;padding:.25em .75em}
+input[type=email]:hover,input[type=tel]:hover,input[type=text]:hover,select:hover,textarea:hover,
+input[type=email]:focus,input[type=tel]:focus,input[type=text]:focus,select:focus,textarea:focus{border-color:#72be1a !important}
+input[type=email].error,input[type=tel].error,input[type=text].error,select.error,textarea.error,.error{border-color:#e10332 !important;color:#e10332 !important}
+::-webkit-input-placeholder{font-size:.9em}
+::-moz-placeholder{font-size:.9em}
+:-ms-input-placeholder{font-size:.9em}
+:-moz-placeholder{font-size:.9em}
+.info{font-size:.8em}

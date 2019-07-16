@@ -1,0 +1,99 @@
+$attendace_color: #4caf50;
+$child_color: #e91e63;
+$event-booking_color: #ff5722;
+$groups_color: #ff9800;
+$process_automation_color: #3f51b5;
+$giving_color: #009688;
+$forms_surveys_color: #673ab7;
+$online-stores_color: #00bcd4;
+$scheduling_color: #cddc39;
+$people_color: #2196F3;
+$security_color: #000000;
+
+.features {
+  background-color: rgba(50,58,70,.025);
+  margin-top: 70px;
+  .features-title {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 70px;
+    padding-bottom: 10vh;
+    color: $grey_color;
+    animation: fadeInUp 2s;
+  }
+  .explore-more {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    .explore-more-btn {
+      font-feature-settings: "liga" 0;
+      font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #475364;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 25px;
+      font-size: 14px;
+      border-radius: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: all .4s ease;
+      line-height: 22px;
+    }
+    .explore-more-btn:hover {
+      background: #323a46;
+      text-decoration: none;
+    }
+  }
+  .animate {
+    animation: fadeInUp 3s;
+  }
+  .readmore-animate {
+    animation: fadeInUp 3s;
+  }
+}
+
+
+.circle {
+  background-color: $attendace_color;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 60px;
+  h6 {
+    font-size: 80%;
+    color: #000;
+  }
+}
+
+.child {
+  background: $child_color;
+}
+.event-booking {
+  background: $event-booking_color;
+}
+.groups {
+  background: $groups_color;
+}
+.process {
+  background: $process_automation_color;
+}
+.giving {
+  background: $giving_color;
+}
+.surveys {
+  background: $forms_surveys_color;
+}
+.online-stores {
+  background: $online-stores_color;
+}
+.scheduling {
+  background: $scheduling_color;
+}
+.people {
+  background: $people_color;
+}
+.security {
+  background: $security_color;
+}

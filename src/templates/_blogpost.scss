@@ -1,0 +1,67 @@
+.blog-post {
+  position: relative;
+  height: 400px;
+  color: #fff;
+  @media screen and (max-width: 770px) {
+    height: 300px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 80px 0 rgba(0,0,0,0.5); 
+    margin: 1em 0; 
+    max-width: 100%; 
+    height: auto;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    h1 {
+      font-feature-settings: "liga" 0;
+      font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    span {
+      font-feature-settings: "liga" 0;
+      font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 90%;
+    }
+    @media screen and (max-width: 770px) {
+      h1 {
+        font-size: 200%;
+      }
+    }
+    transform: translate(-50%, -50%);
+    .feature-circle {
+      position: relative;
+      margin: auto;
+      padding-top: 15px;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      border: 2px #fff solid;
+    }
+  }
+}
+.posts {
+  margin-top: 5%;
+  padding-bottom: 10vh;
+  iframe {
+    width: 100%;
+    height: 550px
+  }
+}
+.blog-feature-part {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: rgba(50,58,70,.025);
+  margin: 0px;
+  h3 {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+    font-size: 220%;
+    color: #323a46;
+  }
+}

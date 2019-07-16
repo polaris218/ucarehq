@@ -1,0 +1,42 @@
+.feature-page {
+  position: relative;
+  height: 400px;
+  margin: 0px;
+  background-color: #323a46;
+  .feature-page-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 280%;
+  } 
+  h3 {
+    font-weight: 300;
+    font-size: 110%;
+  }
+  p {
+    color: #fff;
+    float: right;
+  }
+  
+}
+.feature-body-list {
+  margin-bottom: 10vh;
+  width: 85%;
+  margin: auto;
+}
+.feature-page-body {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  p {
+    @include fonts();
+    color: #323a46;
+    opacity: 0.9;
+  }
+}

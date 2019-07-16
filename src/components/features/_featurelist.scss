@@ -1,0 +1,52 @@
+$grey_color: #323a46;
+@mixin feature-grid-effect {
+  padding-top: 20px;
+    transform: scale(1);
+    transition-duration: 0.4s;
+    &:hover {
+      transform: scale(1.05);
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background: #fff;
+    }
+}
+.featurelist1 {
+  .row-down {
+    @media screen and (min-width: 990px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  h6 {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $grey_color;
+  }
+  .feature-el {
+    @include feature-grid-effect();
+    a {
+      margin-top: 50px;
+    }
+  }
+}
+.featurelist2 {
+  .up {
+    @media screen and (min-width: 990px) {
+      padding-bottom: 40px;
+    }
+  }
+  .down {
+    padding-bottom: 40px;
+  }
+  h6 {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $grey_color;
+  }
+  .feature-el {
+    @include feature-grid-effect();
+    a {
+      margin-top: 50px;
+    }
+  }
+}

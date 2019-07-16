@@ -1,0 +1,39 @@
+.ministry {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  h1, h2, h3, h4, h5, h6, p {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  h5 {
+    opacity: 0.8;
+  }
+  h6 {
+    color: rgba(50,58,70,.6);
+    font-size: 90%;
+    line-height: 22px;
+    font-weight: 400;
+  }
+  p{
+    color: #323a46;
+    font-size: 90%;
+    line-height: 22px;
+  }
+  h1 {
+    color: #323a46;
+    font-weight: 100;
+    font-size: 230%;
+  }
+  .up, .down {
+    .ministry-circle {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #323a46;
+      border-radius: 50px;
+      margin: 0 auto 20px;
+    }
+    svg {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+$form_border: 2px solid #e5e5e5;
+$error-border-color: #e10332;
+.signup {
+  .list-group {
+    li {
+      @include fonts();
+      list-style: none;
+      margin-bottom: 10px;
+      font-size: 90%;
+      opacity: 0.9;
+      h5 {
+        @include fonts();
+        font-size: 20px;
+        opacity: 0.9;
+      }
+    }
+  }
+  label {
+    @include fonts();
+    opacity: 0.9;
+    font-size: 90%;
+    margin-bottom: 0;
+    small {
+      color: #999;
+    }
+  }
+  .signup-form {
+    margin-top: 10%;
+    .user-input-form {
+      .form-control {
+        @include fonts();
+        border: 2px solid #e5e5e5;
+        border-radius: 1em;
+        padding: .25em .75em;
+        outline: 0;
+        height: 35px;
+        box-shadow: none;
+        font-size: 13px;
+        
+      }
+      .form-control:focus {
+        border: 2px #72be1a solid;
+      }
+      .error {
+        border-color: $error-border-color;
+      }
+      .church-appenx {
+        @extend .form-control;
+      }
+      .trial {
+        border-radius: 30px;
+        background: #72be1a;
+        border-color: #72be1a;
+        color: #fff;
+        padding: .5em 1.5em;
+      }
+      .trial:hover {
+        background: #8ce229;
+        border-color: #8ce229;
+        color: #3c640e;
+      }
+      .error-message {
+        color: #e10332;
+      }
+      .form-group {
+        h6 {
+          font-size: 14px;
+          font-weight: 400;
+          opacity: 0.9;
+        }
+      }
+      p {
+        margin-top: 3vh;
+        opacity: 0.9;
+        a {
+          text-decoration: none;
+          color: #e10332;
+          &:hover {
+            color: #960221;
+          }
+        }
+      }
+    }
+  }
+  .faq {
+    padding-bottom: 10%;
+    h2, h4, p {
+      @include fonts();
+      color: $grey_color;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+      opacity: 0.9;
+      a {
+        text-decoration: none;
+        color: #e10332;
+        &:hover {
+          color: #960221;
+        }
+      }
+    }
+    .qas {
+      width: 80%;
+      margin: auto;
+    }
+    .faq-title {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}

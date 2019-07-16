@@ -1,0 +1,13 @@
+.testinomial {
+  h3 {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 14vh;
+  }
+  .slick-dots li button:before {
+    color: rgba(#ffffff ,0.5);
+  }
+  .slick-dots li.slick-active button:before {
+    color: white;
+  }
+}

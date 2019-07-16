@@ -1,0 +1,42 @@
+$grey_color: #323a46;
+.management {
+  margin-top: 100px;
+  .title {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+    font-size: 300%;
+    width: 80%;
+    font-weight: 300;
+    padding-bottom: 10vh;
+    color: $grey_color;
+    @media screen and (max-width: 770px){
+      width: 100%;
+    }
+  }
+  .try-ucare {
+    font-feature-settings: "liga" 0;
+    font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .try-today {
+      text-decoration: none;
+      background: #72be1a;
+      color: hsla(0,0%,100%,.85);
+      padding: 10px 25px;
+      line-height: 22px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 30px;
+      border: none;
+      letter-spacing: 0px;
+      transition: all .4s ease;
+      text-transform: uppercase;
+    }
+    .try-today:hover {
+      background: #8ce229;
+      color: #3c640e;
+    }
+  }
+}
+.animate {
+  animation: fadeInUp 4s;
+}
